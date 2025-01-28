@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javaram Mali - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <h1 id="typing-effect"></h1>
+      <h2 id="typing-name"></h2>
+      <h3 id="typing-designation"></h3>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="sticker">
+      <img src="images/monitoring.png" alt="Product Manager Sticker">
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>
+        As a Product Manager, I am responsible for guiding the success of a product and leading the cross-functional team that is responsible for improving it. My key responsibilities include:
+      </p>
+      <ul>
+        <li>Defining the product vision and strategy.</li>
+        <li>Collaborating with engineering, design, and marketing teams.</li>
+        <li>Prioritizing features and managing the product roadmap.</li>
+        <li>Analyzing market trends and customer feedback.</li>
+        <li>Ensuring the product meets business goals and user needs.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images/file-and-folder.png" alt="Project 1">
+        <h3>Machine Learning data formation</h3>
+        <p>Collected unstructured data, transformed it into structured data, and utilized it to train machine learning models for developing AI chatbots in multiple languages.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images/file-and-folder.png" alt="Project 2">
+        <h3>Property Management Software</h3>
+        <p>Driving the product as a Product Manager by defining its vision and strategy, while analyzing market trends and customer feedback to guide development ensuring product meets user needs.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section">
+    <h2>Resume</h2>
+    <div class="resume-content">
+      <!-- Basic Details -->
+      <div class="resume-section-block">
+        <h3>Basic Details</h3>
+        <ul>
+          <li><strong>Name:</strong> Javaram Mali</li>
+          <li><strong>Email:</strong> malijay2758@gmail.com</li>
+          <li><strong>Phone:</strong> +91 63532 73801</li>
+          <li><strong>Location:</strong> Ahmedabad, India</li>
+        </ul>
+      </div>
+
+      <!-- Experience -->
+      <div class="resume-section-block">
+        <h3>Experience</h3>
+        <div class="experience-item">
+          <h4>Product Manager</h4>
+          <p><strong>Petpooja</strong> | April 2024 - Present </p>
+          <ul>
+            <li>Leading the development of Petpooja PMS</li>
+            <li>Defining the product vision and strategy.</li>
+            <li>Defined and executed the product roadmap, Analyzing market trends and customer feedback, Ensuring the product meets business goals and user needs.</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h4>Project - Delivery</h4>
+          <p><strong>Shaip Ai india</strong> | July 2023 - April 2024</p>
+          <ul>
+            <li>Gathering the unstructured data in multiple format and converting in into structured data through a defined process. </li>
+            <li>Do market study to gather data in multiple formats in best possible way.</li>
+            <li>everaged structured data in machine learning to enhance AI usability for chatbots and other tools</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="resume-section-block">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>Product Strategy</li>
+          <li>Agile Methodology</li>
+          <li>User Research</li>
+          <li>Data Analysis</li>
+          <li>Team Leadership</li>
+          <li>Roadmap Planning</li>
+          <li>Project Management</li>
+          <li>Market study</li>
+        </ul>
+      </div>
+
+      <!-- Education -->
+      <div class="resume-section-block">
+        <h3>Education</h3>
+        <div class="education-item">
+          <h4>Bachelor of Computer Application (BCA)</h4>
+          <p><strong>Charusat University</strong> | 2020 - 2023</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Javaram Mali. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

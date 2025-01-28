@@ -1,0 +1,366 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00ff88;
+}
+
+/* Home Section */
+.home-section {
+  text-align: center;
+  padding: 6rem 0;
+  background: #1a1a1a;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+}
+
+#typing-effect,
+#typing-name,
+#typing-designation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+}
+
+#typing-effect {
+  font-size: 3.5rem;
+  animation: typing 3s steps(40, end) forwards;
+  color: #00ff88;
+}
+
+#typing-name {
+  font-size: 2.5rem;
+  animation: typing 3s steps(40, end) 3s forwards;
+  opacity: 0;
+}
+
+#typing-designation {
+  font-size: 1.8rem;
+  animation: typing 3s steps(40, end) 6s forwards;
+  opacity: 0;
+}
+
+@keyframes typing {
+  from { width: 0; opacity: 0; }
+  to { width: 100%; opacity: 1; }
+}
+
+.sticker {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  opacity: 0.8;
+}
+
+.sticker img {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* About Me Section */
+.about-section {
+  padding: 4rem 2rem;
+  background: #111;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00ff88;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-content ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 4rem 2rem;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00ff88;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #00ff88;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  display: inline-block;
+  background: #00ff88;
+  color: #111;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-link:hover {
+  background: #00cc66;
+}
+
+/* Resume Section */
+.resume-section {
+  padding: 4rem 2rem;
+  background: #111;
+  text-align: center;
+}
+
+.resume-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00ff88;
+}
+
+.resume-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.resume-section-block {
+  margin-bottom: 2rem;
+}
+
+.resume-section-block h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00ff88;
+}
+
+.resume-section-block ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resume-section-block ul li {
+  margin-bottom: 0.5rem;
+}
+
+.resume-section-block ul li strong {
+  color: #00ff88;
+}
+
+.experience-item, .education-item {
+  margin-bottom: 1.5rem;
+}
+
+.experience-item h4, .education-item h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #00ff88;
+}
+
+.experience-item p, .education-item p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills-list li {
+  background: #00ff88;
+  color: #111;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Contact Me Section */
+.contact-section {
+  padding: 4rem 2rem;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00ff88;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #111;
+  color: #fff;
+}
+
+.contact-form button {
+  background: #00ff88;
+  color: #111;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #00cc66;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #111;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .home-section {
+    flex-direction: column;
+  }
+  .about-section {
+    flex-direction: column;
+  }
+  .resume-section {
+    flex-direction: column;
+  }
+  .resume-section-block {
+    flex-direction: column;
+  }
+  .contact-section {
+    flex-direction: column;
+  }
+  .projects-section {
+    flex-direction: column;
+  }
+  .sticker {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  .nav {
+    display: none;
+  }
+}
